@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
     SNavigationDrawer sNavigationDrawer;
     public static Fragment fragment;
     Class fragmentClass;
-    Button addplace;
+    Button addplace,showplace;
     private Button logout_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,13 @@ public class HomeActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             startActivity(new Intent(HomeActivity.this,AddPlace.class));
+        }
+    });
+    showplace=findViewById(R.id.show);
+    showplace.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(HomeActivity.this,ShowPlace.class));
         }
     });
         menuItems.add(new MenuItem("Home",R.mipmap.ic_launcher));
