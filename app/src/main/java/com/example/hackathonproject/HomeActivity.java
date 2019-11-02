@@ -27,6 +27,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+
+
+
         sNavigationDrawer=findViewById(R.id.Navigation_drawer);
         List<MenuItem> menuItems=new ArrayList<>();
     addplace=findViewById(R.id.add);
