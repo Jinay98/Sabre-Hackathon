@@ -10,17 +10,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="3"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/gradient_animation">
 
         <ImageView
             android:id="@+id/imageview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="225dp"
             android:layout_margin="16dp"
             android:layout_weight="1"
             android:background="@color/colorPrimaryDark"
             android:padding="4dp"
             android:scaleType="centerCrop"
+
             android:src="@drawable/common_google_signin_btn_icon_light" />
 
         <TextView
@@ -29,9 +31,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:layout_weight="1"
+            android:textStyle="bold"
             android:text="Name:"
+
             android:textColor="#000"
-            android:textSize="20sp" />
+            android:textSize="38sp" />
 
         <TextView
             android:id="@+id/description"
@@ -39,6 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:layout_weight="1"
+            android:textSize="20sp"
             android:text="Description:"
             android:textColor="#000" />
 
@@ -46,13 +51,14 @@
             android:id="@+id/days"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:layout_margin="16dp"
             android:layout_weight="1"
             android:text="Days:"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textSize="20sp"/>
 
     </LinearLayout>
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,7 +66,7 @@
         android:layout_centerVertical="true"
         android:layout_weight="1"
         android:scaleType="centerCrop"
-        android:src="@drawable/avd_pathmorph_drawer_arrow_to_hamburger" />
-
-
+        android:gravity="center"
+        android:src="@mipmap/downarrow_round" />
 </LinearLayout>
+

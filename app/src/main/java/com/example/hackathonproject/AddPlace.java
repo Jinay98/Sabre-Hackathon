@@ -35,6 +35,7 @@ public class AddPlace extends AppCompatActivity {
                 place.setName(n);
                 place.setNoofdays(no);
                 place.setDesc(d);
+                place.setUrl("https://firebasestorage.googleapis.com/v0/b/hackathonproject-28ef7.appspot.com/o/mumbai.jpg?alt=media&token=3e20bcdb-fd22-4f4b-9d98-ef0313f2ef24");
                 reff.push().setValue(place);
                 Toast.makeText(AddPlace.this,"data inserted",Toast.LENGTH_LONG).show();
             }

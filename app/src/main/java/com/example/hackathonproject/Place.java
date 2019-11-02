@@ -4,6 +4,7 @@ public class Place {
     String noofdays;
     String desc;
     String name;
+    String url;
 
     public Place() {
     }
@@ -30,5 +31,13 @@ public class Place {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
