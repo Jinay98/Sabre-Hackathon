@@ -18,23 +18,69 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/add"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="150dp"
-                android:layout_marginRight="50dp"
-                android:text="Add Places" />
+
 
             <Button
-                android:id="@+id/show"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="150dp"
+                android:background="@drawable/button_gradient"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="150dp"
+                android:text="Add Places"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:shadowColor="@color/colorStart"
+                android:id="@+id/add"
+                />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_gradient"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 android:layout_marginTop="250dp"
-                android:layout_marginRight="50dp"
-                android:text="Show Places" />
+                android:text="Show Places"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:shadowColor="@color/colorStart"
+                android:id="@+id/show"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_gradient"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="350dp"
+                android:text="Send Message"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:shadowColor="@color/colorStart"
+                android:id="@+id/sendmsg" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_gradient"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="450dp"
+                android:text="Show Messages"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:shadowColor="@color/colorStart"
+                android:id="@+id/showmsg" />
         </FrameLayout>
 
 

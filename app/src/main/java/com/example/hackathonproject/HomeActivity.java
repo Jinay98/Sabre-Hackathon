@@ -12,14 +12,15 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
-
+import java.util.Calendar;
 public class HomeActivity extends AppCompatActivity {
 
     SNavigationDrawer sNavigationDrawer;
     public static Fragment fragment;
     Class fragmentClass;
-    Button addplace,showplace;
+    Button addplace,showplace,sendmsg,showmsg;
     private Button logout_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,24 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(new Intent(HomeActivity.this,ShowPlace.class));
         }
     });
+
+    sendmsg=findViewById(R.id.sendmsg);
+    sendmsg.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(HomeActivity.this,AddMessage.class));
+        }
+    });
+    showmsg=findViewById(R.id.showmsg);
+    showmsg.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(HomeActivity.this,ShowMessage.class));
+        }
+    });
+
+        Date currentTime = Calendar.getInstance().getTime();
+        System.out.println("The date is = "+String.valueOf(currentTime));
         menuItems.add(new MenuItem("Home",R.mipmap.ic_launcher));
         menuItems.add(new MenuItem("Contact Us",R.mipmap.ic_launcher));
         menuItems.add(new MenuItem("Sign Out",R.mipmap.ic_launcher));
