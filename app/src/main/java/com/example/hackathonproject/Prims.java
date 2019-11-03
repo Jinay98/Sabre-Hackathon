@@ -18,6 +18,7 @@ public class Prims extends AppCompatActivity {
     HashMap<Integer,String> hashMap=new HashMap<Integer, String>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        days="";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prims);
         Intent intent = getIntent();
@@ -47,7 +48,7 @@ public class Prims extends AppCompatActivity {
         day3=(TextView)findViewById(R.id.day3);
         day4=(TextView)findViewById(R.id.day4);
         Toast.makeText(this.getApplication(), days+" Helloo Anirudh", Toast.LENGTH_LONG).show();
-        printSubSets(4,Integer.parseInt(intent.getStringExtra("duration")),"");
+        printSubSets(4,Integer.parseInt(intent.getStringExtra("duration"))+1,"");
         try {
 
 
@@ -64,7 +65,6 @@ public class Prims extends AppCompatActivity {
 
     public void printSubSets(int N, int curr, String res){
         if(curr==0){
-            days=res;
             //Toast.makeText(getApplication(), res, Toast.LENGTH_LONG).show();
             return;
         }
@@ -74,8 +74,11 @@ public class Prims extends AppCompatActivity {
                 printSubSets(N, curr-i, res+i);
 
             }
-            if(i==3)
+            if(res.length()==4)
+            {
+                days=res;
                 break;
+            }
         }
     }
     public static int getMin(int[] array)
