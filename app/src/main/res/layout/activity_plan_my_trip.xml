@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".PlanMyTrip">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:hint="Enter number of days here"
+        android:id="@+id/duration"
+        android:layout_margin="30sp"
+        android:onClick="checkbox_clicked"
+        />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:hint="Enter current city"
+            android:id="@+id/currcity"
+            android:layout_margin="30sp"
+            android:onClick="checkbox_clicked"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mumbai"
+            android:textSize="40sp"
+            android:padding="20sp"
+            android:id="@+id/mumbai"
+            android:onClick="checkbox_clicked"
+            />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="212dp"
+            android:layout_gravity="center"
+            android:layout_margin="0sp"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/mumbai" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chennai"
+        android:textSize="40sp"
+        android:padding="20sp"
+        android:id="@+id/chennai"
+        android:onClick="checkbox_clicked"
+        />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="218dp"
+            android:padding="20sp"
+            android:layout_gravity="center"
+            android:layout_margin="0sp"
+            android:src="@drawable/chennai" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hyderabad"
+        android:textSize="40sp"
+        android:padding="20sp"
+        android:id="@+id/hyderabad"
+        android:onClick="checkbox_clicked"
+        />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="493dp"
+            android:layout_gravity="center"
+            android:src="@drawable/hyderabad" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kolkata"
+        android:padding="20sp"
+        android:textSize="40sp"
+        android:id="@+id/kolkata"
+        android:onClick="checkbox_clicked"
+        />
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kolkata"
+        android:layout_gravity="center"
+        />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_gradient"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="150dp"
+        android:text="Plan My trip"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:shadowColor="@color/colorStart"
+        android:id="@+id/plantrip"
+        android:onClick="planmytrip"
+    />
+    </LinearLayout>
+
+</ScrollView>

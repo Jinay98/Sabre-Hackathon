@@ -59,14 +59,15 @@
             android:textSize="20sp"/>
 
     </LinearLayout>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_weight="1"
-        android:scaleType="centerCrop"
         android:gravity="center"
+        android:scaleType="centerCrop"
         android:src="@mipmap/downarrow_round" />
 </LinearLayout>
 

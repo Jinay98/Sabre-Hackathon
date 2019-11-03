@@ -36,7 +36,7 @@ public class HomeActivity extends AppCompatActivity {
     addplace.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            startActivity(new Intent(HomeActivity.this,AddPlace.class));
+            startActivity(new Intent(HomeActivity.this,PlanMyTrip.class));
         }
     });
     showplace=findViewById(R.id.show);
