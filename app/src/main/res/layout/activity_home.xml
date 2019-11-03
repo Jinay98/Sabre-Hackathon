@@ -18,73 +18,79 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
-
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_gradient"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="150dp"
-                android:text="Plan My trip"
-                android:textColor="#fff"
-                android:textSize="15sp"
-                android:shadowColor="@color/colorStart"
                 android:id="@+id/add"
-                />
-
-
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_gradient"
+                android:shadowColor="@color/colorStart"
+                android:text="Plan my trip"
+                android:textColor="#fff"
+                android:textSize="15sp" />
 
 
             <Button
+                android:id="@+id/show"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button_gradient"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="200dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="250dp"
+                android:background="@drawable/button_gradient"
+                android:shadowColor="@color/colorStart"
                 android:text="Show Places"
                 android:textColor="#fff"
-                android:textSize="15sp"
-                android:shadowColor="@color/colorStart"
-                android:id="@+id/show"
-                />
+                android:textSize="15sp" />
 
             <Button
+                android:id="@+id/sendmsg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button_gradient"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="300dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="350dp"
+                android:background="@drawable/button_gradient"
+                android:shadowColor="@color/colorStart"
                 android:text="Send Message"
                 android:textColor="#fff"
-                android:textSize="15sp"
-                android:shadowColor="@color/colorStart"
-                android:id="@+id/sendmsg" />
+                android:textSize="15sp" />
 
 
             <Button
+                android:id="@+id/showmsg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button_gradient"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="400dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="450dp"
+                android:background="@drawable/button_gradient"
+                android:shadowColor="@color/colorStart"
                 android:text="Show Messages"
                 android:textColor="#fff"
-                android:textSize="15sp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/translate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_gradient"
                 android:shadowColor="@color/colorStart"
-                android:id="@+id/showmsg" />
-
-
-
-
+                android:text="Translate"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:onClick="translate"
+                />
         </FrameLayout>
 
 

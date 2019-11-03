@@ -198,7 +198,7 @@ public class SNavigationDrawer extends RelativeLayout {
                             }
                         },300);
                         //Close Navigation Drawer
-                        closeDrawer();
+                        //closeDrawer();
                     }
                     else{
                         menuItemClicked(currentPos);

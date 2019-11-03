@@ -87,7 +87,10 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     }
                     case 2:{
-                        fragmentClass = Fragment_SignOut.class;
+                        signOut();
+                        Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
                         break;
                     }
                     case 3:{
@@ -180,6 +183,12 @@ public class HomeActivity extends AppCompatActivity {
                                             }
         );
     }
+
+    public void translate(View view){
+        startActivity((new Intent(HomeActivity.this, TranslateActivity.class)));
+    }
+
+
     private void signOut() {
         FirebaseAuth.getInstance().signOut();
     }

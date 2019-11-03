@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">HackathonProject</string>
+
+    <string-array name="spinnerItems">
+        <item>Hindi</item>
+        <item>English</item>
+        <item>Marathi</item>
+        <item>Bengali</item>
+    </string-array>
 </resources>

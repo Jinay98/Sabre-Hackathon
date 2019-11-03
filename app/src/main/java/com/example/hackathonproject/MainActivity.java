@@ -32,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (FirebaseAuth.getInstance().getCurrentUser() != null){
+            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+        }
+
         imageView = findViewById(R.id.background_image);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
@@ -64,6 +71,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onStart(){
+        super.onStart();
+        if (FirebaseAuth.getInstance().getCurrentUser() != null){
+            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+        }
+    }
+
+
     private boolean checkEmail() {
         e = email.getEditText().getText().toString();
         p = password.getEditText().getText().toString();

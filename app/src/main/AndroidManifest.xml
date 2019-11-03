@@ -11,10 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Prims"/>
-        <activity android:name=".PlanMyTrip" >
-
-        </activity>
+        <activity android:name=".TranslateActivity"></activity>
+        <activity android:name=".Prims" />
+        <activity android:name=".PlanMyTrip"></activity>
         <activity android:name=".ShowMessage" />
         <activity android:name=".AddMessage" />
         <activity android:name=".ShowPlace" />
@@ -24,7 +23,6 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
