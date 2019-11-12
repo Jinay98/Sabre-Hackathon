@@ -16,7 +16,8 @@
             android:layout_centerHorizontal="false"
             android:layout_marginTop="200dp"
             android:hint="Enter Text here"
-            android:id="@+id/input_text"/>
+            android:id="@+id/input_text"
+            android:text="Namaste"/>
 
         <Button
             android:layout_width="70dp"
@@ -54,6 +55,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/picker"
         android:layout_marginTop="50dp"
+        android:text="Hello"
         android:id="@+id/target"/>
 
 
